@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "airbnb/base",
+    "plugin:wdio/recommended"
+  ],
+  "rules": {
+    "indent": ["error", 4],
+    "func-names": "off",
+    "max-len": ["error", { "code": 122 }],
+    "no-plusplus": "off",
+    "no-console": "warn",
+    "strict": "warn",
+    "no-await-in-loop": "warn",
+    "class-methods-use-this": "off",
+    "no-useless-constructor": "warn",
+    "lines-between-class-members": "off",
+    "space-before-function-paren": "off"
+  },
+  "plugins": ["wdio"],
+  "env": {
+    "mocha": true,
+    "browser": true,
+    "es6": true
+  }
+}
