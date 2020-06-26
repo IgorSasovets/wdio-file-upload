@@ -28,4 +28,9 @@ exports.config = {
         console.log(capabilities, specs);
         browser.maximizeWindow();
     },
+    beforeSession(config, capabilities, specs) {
+        // eslint-disable-next-line no-param-reassign
+        config.specFileRetries = 2;
+        console.log(capabilities, specs);
+    },
 };

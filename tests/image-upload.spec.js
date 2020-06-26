@@ -22,7 +22,7 @@ describe('Image upload issue', () => {
             await ImageUploadPage.navigateToLogin();
             await ImageUploadPage.fillLoginForm(faker.internet.email(), faker.internet.password());
             await ImageUploadPage.submitUserCredentials();
-            assert.equal(await ImageUploadPage.getErrorMessageText(), 'Incorrect email.');
+            assert.equal(await ImageUploadPage.getErrorMessageText(), 'Incorrect emaila.');
         });
     });
 
