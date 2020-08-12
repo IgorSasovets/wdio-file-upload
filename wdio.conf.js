@@ -3,8 +3,8 @@
 global.mocha = require('mocha');
 
 exports.config = {
-    runner: 'local',
-    port: 9515,
+    hostname: 'test.com',
+    port: 1678,
     path: '/',
     waitforTimeout: 10000,
     connectionRetryTimeout: 90000,
