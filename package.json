@@ -3,35 +3,37 @@
   "version": "1.0.0",
   "description": "Sample project to reproduce issue with the logs",
   "scripts": {
-    "test-samples": "./node_modules/.bin/wdio wdio.conf.js"
+    "test-samples": "./node_modules/.bin/wdio wdio.conf.js",
+    "type-text-bug": "./node_modules/.bin/wdio wdio.conf.js --suite typeTextBug",
+    "start-chromedriver": "./node_modules/.bin/chromedriver"
   },
   "devDependencies": {
-    "@wdio/cli": "~6.4.0",
-    "@wdio/dot-reporter": "~6.4.0",
-    "@wdio/local-runner": "~6.4.0",
-    "@wdio/mocha-framework": "~6.4.0",
-    "@wdio/selenium-standalone-service": "~6.4.0",
-    "@wdio/spec-reporter": "~6.4.0",
-    "@wdio/sync": "~6.4.0",
+    "@wdio/cli": "6.5.2",
+    "@wdio/dot-reporter": "6.4.7",
+    "@wdio/local-runner": "6.5.2",
+    "@wdio/mocha-framework": "6.5.0",
+    "@wdio/selenium-standalone-service": "6.4.7",
+    "@wdio/spec-reporter": "6.4.7",
+    "@wdio/sync": "6.5.0",
     "assert": "^2.0.0",
     "bluebird": "~3.5.3",
     "chai": "~4.2.0",
     "chai-as-promised": "~7.1.1",
     "chai-http": "~4.2.0",
-    "chromedriver": "~84.0.1",
+    "chromedriver": "^85.0.1",
     "dotenv": "~6.2.0",
     "eslint": "5.15.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-mocha": "~5.2.0",
     "eslint-plugin-wdio": "~6.0.12",
-    "wdio-chromedriver-service": "~6.0.3",
-    "wdio-image-comparison-service": "~1.13.6"
+    "wdio-chromedriver-service": "6.0.4",
+    "wdio-image-comparison-service": "1.13.6"
   },
   "dependencies": {
     "faker": "^4.1.0",
-    "geckodriver": "~1.20.0",
+    "geckodriver": "1.20.0",
     "mocha": "~8.1.1",
-    "wdio-geckodriver-service": "~1.1.0"
+    "wdio-geckodriver-service": "1.1.0"
   }
 }

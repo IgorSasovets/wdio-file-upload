@@ -3,8 +3,7 @@
 global.mocha = require('mocha');
 
 exports.config = {
-    hostname: 'test.com',
-    port: 1678,
+    port: 9515,
     path: '/',
     waitforTimeout: 10000,
     connectionRetryTimeout: 90000,
@@ -22,9 +21,9 @@ exports.config = {
     baseUrl: 'https://photoscissors.com/',
     logLevel: 'debug',
     specs: ['tests/*spec.js'],
-    services: [
-        process.env.BROWSER && process.env.BROWSER === 'firefox' ? 'geckodriver' : 'chromedriver',
-    ],
+    suites: {
+        typeTextBug: ['tests/type-text.spec.js'],
+    },
     before(capabilities, specs) {
         console.log(capabilities, specs);
         browser.maximizeWindow();

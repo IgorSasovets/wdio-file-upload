@@ -59,6 +59,11 @@ class BasePage {
         await fileInput.addValue(absolutePath);
         await browser.pause(1000);
     }
+
+    async getInputText(element) {
+        await this.waitForElement(element);
+        return element.then(el => el.getProperty('value'));
+    }
 }
 
 module.exports = BasePage;
